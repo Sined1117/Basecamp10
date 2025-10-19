@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.0.1;
 
 // Contract for an unburnable token
 contract UnburnableToken {
@@ -46,6 +46,6 @@ contract UnburnableToken {
 
         // Perform the transfer
         balances[msg.sender] -= _amount;
-        balances[_to] += _amount;
+        balances[_to] += _amount; 
     }
 }
